@@ -1,6 +1,19 @@
 ---
 version: 2
 updates:
+  - name: "Multi-Ecosystem dependencies"
+    package-ecosystems:
+      - package-ecosystem: "github-actions"
+        pattern: ["first-interaction"]
+        directory: "/"
+      - package-ecosystem: npm
+        pattern: ["lodash"]
+        directory: "/javascript"
+      - package-ecosystem: bundler
+        pattern: ["business"]
+        directory: "/ruby"
+    schedule:
+      interval: "weekly"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
