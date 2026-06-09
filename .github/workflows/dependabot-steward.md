@@ -93,14 +93,14 @@ safe-outputs:
     max: 3
   create-issue:
     title-prefix: "[dependabot-agent] "
-    expires: 14
+    expires: 14d
     max: 2
   upload-artifact:
     skip-archive: true
   noop:
 strict: true
 timeout-minutes: 20
-source: carlin-dependabot-testing/gh-aw-bundle@0b46aa5869cb452f4834a6f7174e2e4695ffd2dd
+source: carlin-dependabot-testing/gh-aw-bundle@c5e1ddb7011d1c546a0805089f68b5c4dc0fd6a0
 ---
 
 # Dependabot Steward
